@@ -11,5 +11,5 @@ if __name__ == "__main__":
     elif argument_length > 0:
         print("{} arguments:".format(argument_length))
         for i in range(1,len(sys.argv)):
-            print(i, sys.argv[i])
+            print("{}: {}".format(i, sys.argv[i]))
 
