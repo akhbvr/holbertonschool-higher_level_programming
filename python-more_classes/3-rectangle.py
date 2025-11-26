@@ -55,7 +55,8 @@ class Rectangle:
             return rectangle
         else:
             for i in range(1, self.height+1):
-                rectangle += "#"*self.width+"\n"
                 if i == (self.height):
                     rectangle += "#"*self.width
+                else:
+                    rectangle += "#"*self.width+"\n"
             return rectangle
