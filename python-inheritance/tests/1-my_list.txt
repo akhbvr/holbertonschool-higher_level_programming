@@ -1,0 +1,7 @@
+vi 1-main.py
+chmod +x 1-main.py 
+clear
+vi 1-my_list.py
+./1-main.py 
+vi 1-my_list.py
+./1-main.py
