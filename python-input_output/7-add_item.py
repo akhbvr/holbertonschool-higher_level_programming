@@ -11,7 +11,7 @@ arguments = sys.argv[1:]
 
 try:
     prev_data = load_from_json_file("add_item.json")
-except:
+except Exception as e:
     prev_data = []
 finally:
     save_to_json_file(prev_data + arguments, "add_item.json")
