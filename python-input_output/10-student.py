@@ -13,7 +13,9 @@ class Student:
     def to_json(self, attrs=None):
         """return json data of object"""
 
-        if (isinstance(attrs, list) and all(isinstance(x, str) for x in attrs)):
+        is_valid_attrs = isinstance(attrs, list) and \
+                all(isinstance(x, str) for x in attrs)
+        if is_valid_attrs:
             result = {}
             for key in attrs:
                 if key in self.__dict__:
