@@ -14,4 +14,4 @@ try:
 except:
     prev_data = []
 finally:
-    save_to_json_file(arguments + prev_data, "add_item.json")
+    save_to_json_file(prev_data + arguments, "add_item.json")
