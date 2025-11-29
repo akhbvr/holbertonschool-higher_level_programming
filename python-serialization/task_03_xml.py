@@ -30,7 +30,7 @@ def deserialize_from_xml(filename):
         if text is None:
             value = None
         else:
-            lower = text
+            lower = text.lower()
             if lower == "true":
                 value = True
             elif lower == "false":
