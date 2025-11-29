@@ -26,22 +26,5 @@ def deserialize_from_xml(filename):
     result = {}
 
     for child in root:
-        text = child.text
-        if text is None:
-            value = None
-        else:
-            lower = text.lower()
-            if lower == "true":
-                value = True
-            elif lower == "false":
-                value = False
-            else:
-                try:
-                    value = int(text)
-                except ValueError:
-                    try:
-                        value = float(text)
-                    except ValueError:
-                        value = str(text)
         result[child.tag] = value
     return result
