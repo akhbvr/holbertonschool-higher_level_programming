@@ -6,7 +6,7 @@ def pascal_triangle(n):
     """pascal's triangle"""
 
     if n <= 0:
-        return [[]]
+        return []
     if n == 1:
         return [[1]]
     if n == 2:
